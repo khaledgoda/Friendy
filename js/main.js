@@ -43,7 +43,7 @@ errors.forEach(error => error.style.display = 'none');
 checkInputField(email, 0, 'Please enter your email');
 checkInputField(password, 1, 'Please enter your Password and must be more than 8 characters');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event)=> {
     event.preventDefault();
 
     let hasError = false;
